@@ -1,0 +1,473 @@
+{
+ "_readme": "Mincha page data. Times are 24h Montreal time (13:00 = 1:00 PM). 'rel':'gedola' = Mincha Gedola (computed daily); 'rel':'shkia' + 'offset' minutes (negative = before sunset), computed daily. 'days' = weekdays it runs (0=Sunday ... 4=Thursday); omit = the list's defaultDays (shul: Sunday-Thursday, work: Monday-Thursday). 'tag' = small English label shown on the entry. Friday and Shabbos show no list; the page points to Sunday's first minyanim.",
+ "location": {
+  "name": "Montreal",
+  "lat": 45.5165,
+  "lon": -73.6075,
+  "tz": "America/Toronto"
+ },
+ "defaultDays": {
+  "shul": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "work": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "season": {
+  "title": "זמני מנחה",
+  "subtitle": "Winter schedule · Cheshvan 5787",
+  "workMonth": "November 2026"
+ },
+ "contact": {
+  "label": "Comments & corrections",
+  "phone": "(514) 500-3091"
+ },
+ "shul": [
+  {
+   "name": "סאטמאר - פארק",
+   "rel": "gedola"
+  },
+  {
+   "name": "סאטמאר - האטשיסאן",
+   "rel": "gedola",
+   "days": [
+    0
+   ],
+   "tag": "Sunday only"
+  },
+  {
+   "name": "אהל חיים ד'סאטמאר",
+   "time": "12:30"
+  },
+  {
+   "name": "וויזשניץ 'אהבת ישראל'",
+   "time": "12:30",
+   "days": [
+    0
+   ],
+   "tag": "Sunday only"
+  },
+  {
+   "name": "וויזניץ אמרי חיים",
+   "time": "13:00"
+  },
+  {
+   "name": "סאטמאר פארק",
+   "time": "13:00"
+  },
+  {
+   "name": "חרדים",
+   "time": "13:00"
+  },
+  {
+   "name": "בעלזא 'זכרון יעקב יצחק' - JM",
+   "time": "13:20"
+  },
+  {
+   "name": "'אהל חיים' ד'סאטמאר",
+   "time": "13:30"
+  },
+  {
+   "name": "וויזניץ צמח צדיק - כולל",
+   "time": "13:30"
+  },
+  {
+   "name": "כולל עמק הלכה (עטרת פיגא)",
+   "time": "13:45"
+  },
+  {
+   "name": "סאטמאר - פארק",
+   "time": "13:55"
+  },
+  {
+   "name": "סאטמאר - פארק",
+   "time": "14:00"
+  },
+  {
+   "name": "סאטמאר - האטשיסאן",
+   "time": "14:00"
+  },
+  {
+   "name": "בעלזא 'זכרון יעקב יצחק' - JM",
+   "time": "14:40"
+  },
+  {
+   "name": "סאטמאר - פארק",
+   "time": "15:00"
+  },
+  {
+   "name": "וויזשניץ 'אהבת ישראל'",
+   "time": "15:00"
+  },
+  {
+   "name": "כולל מהר'י ט''ב - 5658 פארק",
+   "time": "15:00"
+  },
+  {
+   "name": "'אהל חיים' ד'סאטמאר",
+   "time": "15:00"
+  },
+  {
+   "name": "בעלזא בית יעקב - פארק",
+   "time": "15:15"
+  },
+  {
+   "name": "סקווירא",
+   "time": "15:30"
+  },
+  {
+   "name": "חרדים",
+   "time": "15:45"
+  },
+  {
+   "name": "בעלזא 'זכרון יעקב יצחק' - JM",
+   "time": "16:00"
+  },
+  {
+   "name": "בעלזא בית יעקב - פארק",
+   "time": "16:00"
+  },
+  {
+   "name": "סאטמאר - פארק",
+   "time": "16:00"
+  },
+  {
+   "name": "סאטמאר - האטשיסאן",
+   "time": "16:00"
+  },
+  {
+   "name": "ויזניץ 'אמרי חיים'",
+   "time": "16:10"
+  },
+  {
+   "name": "סקווירא",
+   "time": "16:15"
+  },
+  {
+   "name": "בעלזא בית יעקב - פארק",
+   "time": "16:40"
+  },
+  {
+   "name": "סקווירא",
+   "time": "16:40"
+  },
+  {
+   "name": "סאטמאר - פארק",
+   "time": "16:45"
+  },
+  {
+   "name": "סאטמאר - פארק",
+   "time": "17:00"
+  },
+  {
+   "name": "סאטמאר - האטשיסאן",
+   "time": "17:00"
+  },
+  {
+   "name": "'אהל חיים' ד'סאטמאר",
+   "time": "17:00"
+  },
+  {
+   "name": "ויזשניץ אהבת ישראל",
+   "rel": "shkia",
+   "offset": -15
+  },
+  {
+   "name": "בעלזא 'זכרון יעקב יצחק' - JM",
+   "rel": "shkia",
+   "offset": 25
+  },
+  {
+   "name": "בעלזא בית יצחק - פארק",
+   "rel": "shkia",
+   "offset": 25
+  },
+  {
+   "name": "בעלזא - האטשיסאן",
+   "rel": "shkia",
+   "offset": 25
+  },
+  {
+   "name": "סקווירא",
+   "rel": "shkia",
+   "offset": 35
+  },
+  {
+   "name": "היכל דוד",
+   "rel": "shkia",
+   "offset": 40
+  },
+  {
+   "name": "סאטמאר - פארק",
+   "rel": "shkia",
+   "offset": 45
+  },
+  {
+   "name": "סאטמאר - האטשיסאן",
+   "rel": "shkia",
+   "offset": 45
+  },
+  {
+   "name": "מונקאטש",
+   "rel": "shkia",
+   "offset": 45
+  },
+  {
+   "name": "סקווירא",
+   "rel": "shkia",
+   "offset": 50
+  },
+  {
+   "name": "סאטמאר - פארק",
+   "rel": "shkia",
+   "offset": 55
+  },
+  {
+   "name": "סאטמאר - האטשיסאן",
+   "rel": "shkia",
+   "offset": 58
+  },
+  {
+   "name": "מחזיקי תורה טאב",
+   "rel": "shkia",
+   "offset": 60
+  }
+ ],
+ "work": [
+  {
+   "name": "Biener's Bakery",
+   "address": "2275 Rue Dandurand",
+   "time": "12:40",
+   "maps": "2275 Rue Dandurand, Montréal, QC H2G 1Z3"
+  },
+  {
+   "name": "Jewish General Hospital",
+   "address": "3755 Côte-Sainte-Catherine Rd",
+   "time": "12:45",
+   "maps": "3755 Chemin de la Côte-Sainte-Catherine, Montréal, QC"
+  },
+  {
+   "name": "Mehadrin Milk",
+   "address": "5655 Av. Royalmount",
+   "time": "14:00",
+   "maps": "5655 Av. Royalmount, Montréal, QC"
+  },
+  {
+   "name": "Fooderie",
+   "address": "6680 Av. du Parc - Second floor, entrance in back of the cashier",
+   "time": "14:00",
+   "maps": "6680 Avenue du Parc, Montréal, QC"
+  },
+  {
+   "name": "Toyota Montreal Nord",
+   "address": "6767 Henri-Bourassa Est",
+   "time": "14:00",
+   "maps": "6767 Boulevard Henri-Bourassa E, Montréal-Nord, QC"
+  },
+  {
+   "name": "KT Supermarket",
+   "address": "601 Ch. de Tash, Boisbriand",
+   "time": "14:00",
+   "maps": "601 Chemin de Tash, Boisbriand, QC"
+  },
+  {
+   "name": "Axwood Management",
+   "address": "330 Sauvé O",
+   "time": "14:00",
+   "maps": "330 Rue Sauvé O, Montréal, QC"
+  },
+  {
+   "name": "Embix",
+   "address": "2550 Bates 3d Floor",
+   "time": "14:00",
+   "maps": "2550 Ch. Bates, Montréal, QC"
+  },
+  {
+   "name": "Canador",
+   "address": "870 boul du Curé-Boivin, Boisbriand, (Hwy 15, exit 19)",
+   "time": "14:00",
+   "maps": "870 Boulevard du Curé-Boivin, Boisbriand, QC J6G 2A7"
+  },
+  {
+   "name": "Lipa's Supermarket",
+   "address": "5573 Av. du Parc - 2nd floor (New Building)",
+   "time": "14:00",
+   "maps": "5573 Avenue du Parc, Montréal, QC"
+  },
+  {
+   "name": "Marvid",
+   "address": "5671 Industriel Blvd.",
+   "time": "14:00",
+   "maps": "5671 Boulevard Industriel, Montréal, QC"
+  },
+  {
+   "name": "Kosher Mehadrin",
+   "address": "8600 8e Avenue",
+   "time": "14:00",
+   "maps": "8600 8e Avenue, Montréal, QC"
+  },
+  {
+   "name": "The Vaad",
+   "address": "6819 Decarie Blvd.",
+   "time": "14:15",
+   "maps": "6819 Boulevard Décarie, Montréal, QC"
+  },
+  {
+   "name": "MC Building (Near Tosh)",
+   "address": "3675 boul de la Grande-Allée, Boisbriand",
+   "time": "14:30",
+   "maps": "3675 Boulevard de la Grande-Allée, Boisbriand, QC J7H 1H5"
+  },
+  {
+   "name": "240 Guizot West",
+   "address": "240 Guizot O, H2P 1L5",
+   "time": "15:00",
+   "maps": "240 Rue Guizot O, Montréal, QC H2P 1L5"
+  },
+  {
+   "name": "Noble Packaging",
+   "address": "5623 Av. Casgrain",
+   "time": "15:00",
+   "maps": "5623 Avenue Casgrain, Montréal, QC"
+  },
+  {
+   "name": "Axis Lighting",
+   "address": "2505 Rue Senkus, LaSalle",
+   "time": "15:00",
+   "maps": "2505 Rue Senkus, LaSalle, QC"
+  },
+  {
+   "name": "Altra",
+   "address": "9000 Pierre-Bonne",
+   "time": "15:05",
+   "maps": "9000 Rue Pierre-Bonne, Montréal, QC"
+  },
+  {
+   "name": "Montreal Matza Bakery",
+   "address": "6465 Av. Durocher",
+   "time": "15:25",
+   "maps": "6465 Avenue Durocher, Montréal, QC"
+  },
+  {
+   "name": "Delmar",
+   "address": "4058 Jean Talon Ouest",
+   "time": "15:30",
+   "maps": "4058 Rue Jean-Talon O, Montréal, QC"
+  },
+  {
+   "name": "Posen Financial Services",
+   "address": "6750 Av. du Parc, Suite 355",
+   "time": "15:30",
+   "maps": "6750 Avenue du Parc, Montréal, QC H2V 1A4"
+  },
+  {
+   "name": "Frankforter Group",
+   "address": "4810 Jean-Talon West, Suite 408, H4P 2N5",
+   "time": "16:00",
+   "maps": "4810 Rue Jean-Talon O, Montréal, QC H4P 2N5"
+  }
+ ],
+ "sponsors": {
+  "work": [
+   {
+    "name": "Elite Locksmith Inc",
+    "logo": "/mincha/logos/elite.webp",
+    "w": 203,
+    "h": 228,
+    "dw": 68,
+    "phone": "438-365-3138",
+    "tel": "+14383653138",
+    "email": "Yanky@elitelocksmithinc.com"
+   },
+   {
+    "name": "Le Falafel Plus",
+    "logo": "/mincha/logos/falafel.webp",
+    "w": 286,
+    "h": 228,
+    "dw": 95,
+    "phone": "(514) 731-1221",
+    "tel": "+15147311221",
+    "email": "lefalafelplus@gmail.com",
+    "address": "4677 Ave Van Horne|Montréal, QC H3W 1H8",
+    "maps": "https://www.google.com/maps/search/?api=1&query=4677+Avenue+Van+Horne+Montreal+QC+H3W+1H8"
+   },
+   {
+    "name": "Ultimate Auto Leasing",
+    "logo": "/mincha/logos/ultimate.webp",
+    "w": 490,
+    "h": 165,
+    "dw": 163,
+    "phone": "514.926.4097",
+    "tel": "+15149264097"
+   },
+   {
+    "name": "Extire · Tires on Demand",
+    "logo": "/mincha/logos/extire.webp",
+    "w": 466,
+    "h": 147,
+    "dw": 155,
+    "phone": "514.400.3080",
+    "tel": "+15144003080"
+   }
+  ],
+  "shul": [
+   {
+    "name": "armax · Restauration d'urgence",
+    "logo": "/mincha/logos/armax.webp",
+    "w": 570,
+    "h": 131,
+    "dw": 190,
+    "phone": "1-888-540-9111",
+    "tel": "+18885409111"
+   },
+   {
+    "name": "Padwa Financial Solutions",
+    "logo": "/mincha/logos/padwa.webp",
+    "w": 443,
+    "h": 183,
+    "dw": 148,
+    "phone": "514-929-3469",
+    "tel": "+15149293469",
+    "email": "elazer@padwafinancials.com"
+   },
+   {
+    "name": "Indursky's Premium",
+    "logo": "/mincha/logos/indurskys.webp",
+    "w": 550,
+    "h": 172,
+    "dw": 183,
+    "phone": "514.274.8693",
+    "tel": "+15142748693",
+    "address": "5365 Parc Ave",
+    "maps": "https://www.google.com/maps/search/?api=1&query=5365+Avenue+du+Parc+Montreal+QC"
+   },
+   {
+    "name": "ClearX Drains",
+    "logo": "/mincha/logos/clearx.webp",
+    "w": 371,
+    "h": 197,
+    "dw": 124,
+    "phone": "514.809.5465",
+    "tel": "+15148095465"
+   },
+   {
+    "name": "Elevate Mortgage",
+    "logo": "/mincha/logos/elevate.webp",
+    "w": 452,
+    "h": 179,
+    "dw": 151,
+    "phone": "514.370.5592",
+    "tel": "+15143705592",
+    "email": "Info@elevatemortgage.ca"
+   }
+  ]
+ }
+}
