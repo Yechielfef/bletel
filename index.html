@@ -120,34 +120,35 @@ else if(h.indexOf('tel:')===0)gtag('event','phone_click',{link_url:h});});</scri
 </style>
 <!-- revert-bets-1793596669 -->
 <style>/* phone-h1-bets */.mbr{display:none}@media (max-width:640px){.mbr{display:inline}.hero .bet-field .bet3d.b5{top:35%!important}.hero .bet-field .bet3d.b1{top:41%!important}.hero .bet-field .bet3d.b2{top:39%!important}.hero .bet-field .bet3d.b3{top:63%!important}.hero .bet-field .bet3d.b4{top:72%!important}}</style><!-- phoneh1-1793598141 -->
-<!-- mall-1793732631 --><!-- mincha-fab -->
-<style id="mincha-fab-css">
-@font-face{font-family:"FbKundalini";src:url(/fonts/FbKundalini-Bold.woff2) format("woff2");font-weight:700;font-display:swap}
-.mincha-fab{position:fixed;right:calc(24px + env(safe-area-inset-right,0px));bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:9999;
- width:92px;height:92px;border-radius:50%;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;
- background:#021f42;color:#fff;border:2px solid #8cbdde;text-decoration:none;-webkit-tap-highlight-color:transparent;
- font-family:"FbKundalini","Heebo",serif;font-weight:700;font-size:25px;line-height:.92;text-align:center;direction:rtl;letter-spacing:0;
- box-shadow:0 8px 20px rgba(2,15,35,.24),0 2px 4px rgba(2,15,35,.16);
- opacity:0;transform:translateY(16px);animation:minchaFabIn .45s ease-out .4s forwards;
- transition:background-color .2s}
-.mincha-fab span{display:block;white-space:nowrap;padding-top:.06em}
-.mincha-fab::before{content:"";position:absolute;inset:-2px;border-radius:50%;border:2px solid #8cbdde;pointer-events:none;
- opacity:0;animation:minchaFabRing 2.6s cubic-bezier(.2,.6,.3,1) 1.2s infinite}
-.mincha-fab:hover,.mincha-fab:focus-visible{background:#0a2f5c}
-.mincha-fab:hover::before{animation-play-state:paused;opacity:0}
-.mincha-fab:focus-visible{outline:2px solid #8cbdde;outline-offset:4px}
-@keyframes minchaFabIn{to{opacity:1;transform:none}}
-@keyframes minchaFabRing{0%{transform:scale(1);opacity:.85}75%,100%{transform:scale(1.42);opacity:0}}
-@media (max-width:767px){
- .mincha-fab{right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));width:74px;height:74px;font-size:20px}
-}
-@media (prefers-reduced-motion:reduce){.mincha-fab{animation:none;opacity:1;transform:none}.mincha-fab::before{animation:none;opacity:0}}
-@media print{.mincha-fab{display:none}}
-
-/*fab-v2*/.mincha-fab{font-size:20px!important;line-height:.92!important}.mincha-fab span{padding-top:0!important}@media (max-width:767px){.mincha-fab{font-size:16px!important}}
+<!-- mincha-pop -->
+<style id="mincha-pop-css">
+@font-face{font-family:"FbFrank";src:url(/mincha/fonts/FbAbsoluti-Medium.woff2) format("woff2");font-weight:400 900;font-style:normal;font-display:swap;unicode-range:U+0590-05FF,U+FB1D-FB4F}
+@keyframes minchaPopIn{from{opacity:0;transform:translateY(16px) scale(.96)}to{opacity:1;transform:none}}
+#mincha-pop{position:fixed;inset:0;z-index:99999;display:none;align-items:center;justify-content:center;padding:24px}
+#mincha-pop.show{display:flex}
+#mincha-pop .mp-card{position:relative;overflow:hidden;width:min(370px,100%);background:linear-gradient(165deg, rgba(255,255,255,.30) 0%, rgba(255,255,255,.12) 42%, rgba(255,255,255,.07) 100%);backdrop-filter:blur(26px) saturate(160%);-webkit-backdrop-filter:blur(26px) saturate(160%);border:1px solid rgba(255,255,255,.38);border-top-color:rgba(255,255,255,.6);border-radius:20px;box-shadow:0 30px 80px rgba(2,31,66,.5), inset 0 1px 0 rgba(255,255,255,.45), inset 0 -1px 0 rgba(255,255,255,.06);padding:26px 28px 18px;text-align:center;animation:minchaPopIn .45s cubic-bezier(.2,.9,.25,1.15) both}
+#mincha-pop .mp-card::before{content:"";position:absolute;left:0;right:0;top:0;height:52%;pointer-events:none;background:linear-gradient(180deg, rgba(255,255,255,.26) 0%, rgba(255,255,255,.05) 65%, transparent 100%)}
+#mincha-pop .mp-card::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg, transparent 32%, rgba(255,255,255,.09) 46%, transparent 62%)}
+#mincha-pop .mp-close{position:absolute;z-index:2;top:10px;right:12px;width:34px;height:34px;border:none;border-radius:50%;background:rgba(255,255,255,.18);color:#fff;font:400 19px/1 Poppins,sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center}
+#mincha-pop .mp-kicker{position:relative;z-index:1;display:block;font:500 16px/1 FbFrank,Heebo,sans-serif;color:#eaf5fe;letter-spacing:.5px;margin:0 0 8px;direction:rtl;text-shadow:0 1px 6px rgba(2,31,66,.3)}
+#mincha-pop .mp-title{position:relative;z-index:1;font:700 36px/1.05 Ordinary,sans-serif;color:#ffffff;margin:0 0 8px;text-shadow:0 1px 10px rgba(2,31,66,.35)}
+#mincha-pop .mp-sub{position:relative;z-index:1;display:block;font:400 16px/1.5 Poppins,sans-serif;color:#eaf5fe;text-shadow:0 1px 6px rgba(2,31,66,.35);margin:0 0 0}
+#mincha-pop .mp-btn{position:relative;z-index:1;display:inline-block;font:600 16px/1 Poppins,sans-serif;color:#fff;text-decoration:none;background:linear-gradient(165deg, rgba(255,255,255,.36) 0%, rgba(255,255,255,.16) 100%);backdrop-filter:blur(8px) saturate(150%);-webkit-backdrop-filter:blur(8px) saturate(150%);border:1px solid rgba(255,255,255,.5);border-top-color:rgba(255,255,255,.72);padding:14px 30px;border-radius:999px;box-shadow:0 8px 20px rgba(2,31,66,.3), inset 0 1px 0 rgba(255,255,255,.5);text-shadow:0 1px 4px rgba(2,31,66,.4)}
+#mincha-pop .mp-btn .mp-arrow{margin-left:8px}
+@media (max-width:480px){#mincha-pop .mp-card{padding:24px 20px 16px;border-radius:18px}#mincha-pop .mp-title{font-size:30px}}
+@media (prefers-reduced-motion:reduce){#mincha-pop .mp-card{animation:none}}
+@media print{#mincha-pop{display:none!important}}
 </style>
-<a class="mincha-fab" href="/mincha/" lang="he" aria-label="זמני מנחה – Mincha times"><span>זמני</span><span>מנחה</span></a>
-
+<div id="mincha-pop">
+ <div class="mp-card" role="dialog" aria-modal="true" aria-label="Mincha times">
+  <button class="mp-close" aria-label="Close">&times;</button>
+  <span class="mp-kicker" lang="he">זמני מנחה</span>
+  <h2 class="mp-title">Looking for Mincha&nbsp;times?</h2>
+  <span class="mp-sub">Explore minyanim in your area</span><br>
+  <a class="mp-btn" href="/mincha/">Take me there<span class="mp-arrow">&rarr;</span></a>
+ </div>
+</div>
+<script>(function(){var p=document.getElementById("mincha-pop");if(!p)return;try{if(localStorage.getItem("minchaPopClosed")==="1")return}catch(e){}setTimeout(function(){p.classList.add("show")},700);function close(){try{localStorage.setItem("minchaPopClosed","1")}catch(e){}p.remove()}p.querySelector(".mp-close").addEventListener("click",close);document.addEventListener("keydown",function(e){if(e.key==="Escape"&&document.getElementById("mincha-pop"))close()})})();</script>
 <script>(function(){var n=document.querySelector(".issue-name"),t=document.querySelector(".ct-num");if(n&&t&&/#\d+/.test(n.textContent))t.textContent="ISSUE "+n.textContent.trim();})();</script>
 <script id="fullhero">(function(){function f(){var s=document.querySelector(".stats");if(s)document.documentElement.style.setProperty("--stats-h",s.offsetHeight+"px");}f();addEventListener("resize",f);addEventListener("load",f);})();</script><script id="copyctr">(function(){var mq=matchMedia("(min-width:861px) and (orientation:landscape)");function f(){var c=document.querySelector(".hero-copy"),hd=document.querySelector(".site-head"),st=document.querySelector(".stats");if(!c||!hd||!st)return;c.style.setProperty("--copy-dy","0px");if(!mq.matches)return;var cr=c.getBoundingClientRect(),top=hd.getBoundingClientRect().bottom,bot=st.getBoundingClientRect().top;var d=((top+bot)/2)-((cr.top+cr.bottom)/2);c.style.setProperty("--copy-dy",Math.round(d)+"px");}addEventListener("resize",f);addEventListener("load",f);if(document.fonts)document.fonts.ready.then(f);setTimeout(f,600);})();</script></body>
 </html>
