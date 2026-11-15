@@ -128,18 +128,18 @@ else if(h.indexOf('tel:')===0)gtag('event','phone_click',{link_url:h});});</scri
 #mincha-pop.show{display:flex}
 #mincha-pop .mp-card{position:relative;overflow:hidden;width:min(410px,100%);background:linear-gradient(165deg, rgba(2,31,66,.42) 0%, rgba(2,31,66,.26) 45%, rgba(2,31,66,.36) 100%);backdrop-filter:blur(12px) saturate(140%);-webkit-backdrop-filter:blur(12px) saturate(140%);border:1px solid rgba(255,255,255,.38);border-radius:17px;box-shadow:0 30px 80px rgba(2,31,66,.5), inset 0 -1px 0 rgba(255,255,255,.06);padding:40px 36px 32px;text-align:center;animation:minchaPopIn .55s cubic-bezier(.25,.9,.3,1.2) both}
 #mincha-pop .mp-card::before{content:"";position:absolute;left:0;right:0;top:0;height:52%;pointer-events:none;background:linear-gradient(180deg, rgba(255,255,255,.15) 0%, rgba(255,255,255,.04) 65%, transparent 100%)}
-#mincha-pop .mp-close{position:absolute;z-index:2;top:12px;right:12px;width:34px;height:34px;border:none;border-radius:50%;background:rgba(255,255,255,.18);color:#fff;font:400 19px/1 Poppins,sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center}
-#mincha-pop .mp-kicker{position:relative;z-index:1;display:block;font:500 18px/1 FbFrank,Heebo,sans-serif;color:#eaf5fe;letter-spacing:.5px;margin:0 0 18px;direction:rtl;text-shadow:0 1px 6px rgba(2,31,66,.3)}
-#mincha-pop .mp-title{position:relative;z-index:1;font:600 40px/1.05 Ordinary,sans-serif;color:#ffffff;margin:0;text-shadow:0 1px 10px rgba(2,31,66,.35)}
+#mincha-pop .mp-close{position:absolute;z-index:2;top:12px;right:12px;width:34px;height:34px;overflow:hidden;isolation:isolate;border:1px solid rgba(255,255,255,.38);border-radius:50%;background:transparent;box-shadow:0 30px 80px rgba(2,31,66,.5), inset 0 -1px 0 rgba(255,255,255,.06);color:#fff;font:400 19px/1 Poppins,sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center}
+#mincha-pop .mp-kicker{position:relative;z-index:1;display:block;font:500 18px/1 FbFrank,Heebo,sans-serif;color:#eaf5fe;letter-spacing:.5px;margin:0 0 14px;direction:rtl;text-shadow:0 1px 6px rgba(2,31,66,.3)}
+#mincha-pop .mp-title{position:relative;z-index:1;font:600 42px/1.05 Ordinary,sans-serif;color:#ffffff;margin:0;text-shadow:0 1px 10px rgba(2,31,66,.35)}
 #mincha-pop .mp-btn{position:relative;z-index:1;display:inline-block;overflow:hidden;isolation:isolate;font:600 17px/1 Poppins,sans-serif;letter-spacing:.5px;color:#fff;text-decoration:none;background:transparent;border:1px solid rgba(255,255,255,.38);padding:15px 34px;border-radius:999px;box-shadow:0 30px 80px rgba(2,31,66,.5), inset 0 -1px 0 rgba(255,255,255,.06);animation:minchaBtnBreathe 2.2s ease-in-out 1.4s infinite}
 #mincha-pop .mp-btn:hover{border-color:rgba(255,255,255,.6)}
-#mincha-pop .mp-btnrow{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;padding-top:28px}
+#mincha-pop .mp-btnrow{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;padding-top:14px}
 #mincha-pop .mp-btn::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:-110%;width:100%;pointer-events:none;background:linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.1) 20%, rgba(255,255,255,.35) 46%, rgba(255,255,255,.45) 58%, rgba(255,255,255,0) 100%);animation:minchaBtnSheen 3.4s ease-in-out 1.6s infinite}
-#mincha-pop .mp-btn::after{content:"";position:absolute;z-index:-1;left:0;right:0;top:0;height:52%;pointer-events:none;background:linear-gradient(180deg, rgba(255,255,255,.15) 0%, rgba(255,255,255,.04) 65%, transparent 100%)}
+#mincha-pop .mp-close::before,#mincha-pop .mp-btn::after{content:"";position:absolute;z-index:-1;left:0;right:0;top:0;height:52%;pointer-events:none;background:linear-gradient(180deg, rgba(255,255,255,.15) 0%, rgba(255,255,255,.04) 65%, transparent 100%)}
 @keyframes minchaBtnSheen{0%{left:-110%}65%,100%{left:110%}}
 @keyframes minchaBtnBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
 #mincha-pop .mp-btn .mp-arrow{margin-left:8px}
-@media (max-width:480px){#mincha-pop{padding:16px}#mincha-pop .mp-card{padding:36px 24px 28px;border-radius:17px}#mincha-pop .mp-title{font-size:33px}}
+@media (max-width:480px){#mincha-pop{padding:16px}#mincha-pop .mp-card{padding:36px 24px 28px;border-radius:17px}#mincha-pop .mp-title{font-size:35px}}
 @media (prefers-reduced-motion:reduce){#mincha-pop .mp-card{animation:none}#mincha-pop .mp-btn{animation:none}#mincha-pop .mp-btn::before{display:none}}
 @media print{#mincha-pop{display:none!important}}
 </style>
