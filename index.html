@@ -42,6 +42,9 @@ else if(h.indexOf('tel:')===0)gtag('event','phone_click',{link_url:h});});</scri
 @media(max-width:640px){.book.mock .live-booklet{height:min(400px,98vw)}}
 @media(min-width:641px) and (max-width:1100px) and (orientation:portrait){html body .hero .book.mock .live-booklet{height:min(600px,62vw)!important}}
 </style>
+<style id="beis-right-nudge">/* Move only the Beis beside the booklet's upper-left area; preserve its float. */
+html body .hero .bet-field .bet3d.b1{margin-left:clamp(12px,1.6vw,24px);margin-right:clamp(-24px,-1.6vw,-12px)}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -68,7 +71,7 @@ else if(h.indexOf('tel:')===0)gtag('event','phone_click',{link_url:h});});</scri
      1) replace img/current-cover.jpg with a flat JPEG cover; the live booklet fits it automatically (no render step)
      2) change the AnyFlip link in href below (and the "Current Issue" button above)
      3) change the issue number/date in the hero-note above -->
-<a aria-label="Click to view this week's Bletel" class="book mock" href="/current/" rel="noopener" target="_blank"><span aria-hidden="true" class="mock-shadow"></span><span aria-hidden="true" class="mock-contact"></span><span class="mock-float"><span class="mock-lift"><canvas id="booklet-mesh" class="live-booklet" width="1282" height="1400" style="aspect-ratio:1282/1400" role="img" aria-label="Cover of this week's Bletel"></canvas></span></span><span aria-hidden="true" class="ct"><span class="d"></span><span class="rot"><b>CURRENT ISSUE</b><b class="ct-num">ISSUE #276</b><b>CLICK TO VIEW</b></span><svg viewBox="0 0 16 16"><path d="M5 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span aria-hidden="true" class="mock-badge"><span class="mock-dot"></span>CURRENT ISSUE<svg viewBox="0 0 16 16" width="14" height="14"><path d="M5 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+<a aria-label="Click to view this week's Bletel" class="book mock" href="/current/" rel="noopener" target="_blank"><span aria-hidden="true" class="mock-shadow"></span><span aria-hidden="true" class="mock-contact"></span><span class="mock-float"><span class="mock-lift"><canvas id="booklet-mesh" class="live-booklet" width="1282" height="1400" style="aspect-ratio:1282/1400" role="img" aria-label="Cover of this week's Bletel"></canvas></span></span><span aria-hidden="true" class="mock-badge"><span class="mock-dot"></span>CURRENT ISSUE<svg viewBox="0 0 16 16" width="14" height="14"><path d="M5 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
 <!-- ===== end this week's issue ===== -->
 </div>
 </section>
