@@ -164,7 +164,7 @@ html body .hero .bet-field .bet3d.b1{margin-left:clamp(12px,1.6vw,24px);margin-r
  <div class="mp-card" role="dialog" aria-modal="true" aria-label="Mincha times">
   <button class="mp-close" aria-label="Close">&times;</button>
   <span class="mp-kicker" lang="he">זמני מנחה</span>
-  <h2 class="mp-title">LOOKING FOR MINCHA TIMES?</h2>
+  <h2 class="mp-title"><span>LOOKING FOR</span><span>MINCHA TIMES?</span></h2>
   <div class="mp-btnrow"><a class="mp-btn" href="/mincha/">CLICK HERE<span class="mp-arrow">&rarr;</span></a></div>
  </div>
 </div>
@@ -235,5 +235,11 @@ function useCPU(){if(gl){const replacement=canvas.cloneNode(false);canvas.replac
 /* Move the complete booklet and its floor shadows together, not the hero layout. */
 @media(max-width:860px){html body .hero .book.mock{top:calc(clamp(10px,1.4vw,24px) - 20px)}}
 @media(min-width:861px) and (max-width:1100px) and (orientation:portrait){html body .hero .book.mock{top:calc(clamp(10px,1.4vw,24px) - 24px)}}
+</style><style id="mincha-title-two-lines">
+/* Keep the two phrases together at every popup width. */
+#mincha-pop .mp-card{container-type:inline-size}
+#mincha-pop .mp-title{font-size:min(42px,13cqi)}
+#mincha-pop .mp-title>span{display:block;white-space:nowrap}
+@media(max-width:480px){#mincha-pop .mp-title{font-size:min(35px,13cqi)}}
 </style></body>
 </html>
