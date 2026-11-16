@@ -268,3 +268,7 @@ html body .mn-n .nx-addr .u{text-wrap:pretty}
 
 /* Keep English shul addresses aligned with the Hebrew name above. */
 #panel-shul .mn-n .nx-addr a{justify-content:flex-end}
+
+/* Extra minyan labels use the existing brand palette, retaining contrast on navy. */
+.mn .nm .sub > span:not(.mn-tag){color:var(--navy)}
+.mn .mn-n.first .nm .sub > span:not(.mn-tag){color:var(--ice)}
