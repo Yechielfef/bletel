@@ -138,6 +138,8 @@ function renderAds(kind){var el=document.getElementById("ads-"+kind);if(!el)retu
  el.className="mn-sps n"+list.length;
  el.innerHTML=list.map(function(s){var L=[];
   if(s.phone)L.push('<li><a href="tel:'+s.tel+'">'+ico("tel")+'<span class="num">'+esc(s.phone)+'</span></a></li>');
+  var domain=s.website||"";
+  if(domain)L.push('<li><a href="https://'+domain+'" target="_blank" rel="noopener"><svg class="sp-i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><span>'+domain+'</span></a></li>');
   if(s.email)L.push('<li><a href="mailto:'+esc(s.email.toLowerCase())+'">'+ico("mail")+'<span>'+esc(s.email)+'</span></a></li>');
   if(s.address)L.push('<li class="ad"><a href="'+esc(s.maps)+'" target="_blank" rel="noopener">'+ico("pin")+'<span>'+s.address.split("|").map(esc).join("<br>")+'</span></a></li>');
   return'<div class="sp"><div class="sp-logo"><img src="'+s.logo+'" alt="'+esc(s.name)+'" width="'+s.w+'" height="'+s.h+'" style="--dw:'+s.dw+'" decoding="async"></div><ul class="sp-c">'+L.join("")+'</ul></div>'}).join("")}
