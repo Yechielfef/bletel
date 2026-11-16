@@ -73,7 +73,7 @@ function dirUrl(e){var dest=(e.lat!=null&&(e.lng!=null||e.lon!=null))?e.lat+","+
 function dirBtnHTML(e){if(!e.address&&!e.maps)return"";return'<a class="nx-go" href="'+dirUrl(e)+'" target="_blank" rel="noopener" aria-label="Directions to '+esc(e.name)+'" title="Directions"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.71 11.29l-9-9a1 1 0 0 0-1.41 0l-9 9a1 1 0 0 0 0 1.41l9 9a1 1 0 0 0 1.41 0l9-9a1 1 0 0 0 0-1.41zM14 14.5V12h-4v3H8v-4a1 1 0 0 1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg></a>'}
 function nameHTML(x,kind,link){var e=x.e;
  if(kind==="shul"){var sub=(x.label?'<span>'+esc(x.label)+'</span>':"")+tagHTML(e);
-  return'<span class="nm he" lang="he" dir="rtl"><span class="t">'+esc(e.name).replace(/(\S+ - \S+)$/,'<span class="nw">$1</span>')+'</span>'+(sub?'<span class="sub">'+sub+'</span>':"")+'</span>'}
+  return'<span class="nm he" lang="he" dir="rtl"><span class="t">'+esc(e.name).replace(/(\S+ - \S+)$/,'<span class="nw">$1</span>')+'</span>'+(sub?'<span class="sub">'+sub+'</span>':"")+(link==="next"?nextAddrHTML(e):link?addrHTML(e):"")+'</span>'}
  return'<span class="nm en"><span class="t">'+esc(e.name)+'</span>'+tagHTML(e)+(link==="next"?nextAddrHTML(e):link?addrHTML(e):(e.address?'<span class="addr">'+esc(e.address)+'</span>':""))+'</span>'}
 
 /* ---------- live clock ---------- */
@@ -104,7 +104,7 @@ function renderNext(kind){
  var h='<div class="mn-h"><h2>Next minyanim</h2></div>';
  if(msg)h+='<p class="mn-msg">'+msg+'</p>';
  h+='<ul class="mn-nlist">';
- show.forEach(function(x,i){var db=kind==="work"?dirBtnHTML(x.e):"";h+='<li class="mn-n'+(i===0?" first":"")+(db?" has-go":"")+'"><span class="tcol"><span class="tm">'+hm(x.t)+'</span><span class="mn-cd">'+(dayName||cd(x.t-n.mins))+'</span></span>'+nameHTML(x,kind,"next")+db+'</li>'});
+ show.forEach(function(x,i){var db=dirBtnHTML(x.e);h+='<li class="mn-n'+(i===0?" first":"")+(db?" has-go":"")+'"><span class="tcol"><span class="tm">'+hm(x.t)+'</span><span class="mn-cd">'+(dayName||cd(x.t-n.mins))+'</span></span>'+nameHTML(x,kind,"next")+db+'</li>'});
  h+='</ul>';
  if(more)h+='<p class="mn-more">+ '+more+' more in the next hour, see the full list</p>';el.innerHTML=h}
 
