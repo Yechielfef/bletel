@@ -228,9 +228,9 @@ function useCPU(){if(gl){const replacement=canvas.cloneNode(false);canvas.replac
 })();
 </script><style id="directional-floor-shadow">
 /* Directional floor penumbra and tight contact core, same footprints and motion. */
-.book.mock>.mock-shadow{filter:blur(3px);background:radial-gradient(ellipse at 49% 50%,rgba(0,4,15,.63) 0%,rgba(0,5,18,.39) 18%,rgba(0,5,18,.16) 42%,rgba(0,5,18,.04) 67%,rgba(0,5,18,0) 84%)}
-.book.mock>.mock-contact{filter:blur(.85px);background:radial-gradient(ellipse at 48% 50%,rgba(0,2,10,.96) 0%,rgba(0,3,12,.76) 17%,rgba(0,4,14,.30) 42%,rgba(0,5,18,0) 74%)}
-.book.mock>.mock-shadow::before{content:"";position:absolute;left:7%;top:2%;width:94%;height:85%;border-radius:50%;background:radial-gradient(ellipse at 55% 50%,rgba(0,5,18,.2),rgba(0,5,18,0) 70%);filter:blur(3.5px);transform:skewX(-24deg) rotate(-2deg);transform-origin:48% 50%}
+.book.mock>.mock-shadow{filter:blur(3px);background:radial-gradient(ellipse at 49% 50%,rgba(2,31,66,.63) 0%,rgba(2,31,66,.39) 18%,rgba(2,31,66,.16) 42%,rgba(2,31,66,.04) 67%,rgba(2,31,66,0) 84%)}
+.book.mock>.mock-contact{filter:blur(.85px);background:radial-gradient(ellipse at 48% 50%,rgba(2,31,66,.96) 0%,rgba(2,31,66,.76) 17%,rgba(2,31,66,.30) 42%,rgba(2,31,66,0) 74%)}
+.book.mock>.mock-shadow::before{content:"";position:absolute;left:7%;top:2%;width:94%;height:85%;border-radius:50%;background:radial-gradient(ellipse at 55% 50%,rgba(2,31,66,.2),rgba(2,31,66,0) 70%);filter:blur(3.5px);transform:skewX(-24deg) rotate(-2deg);transform-origin:48% 50%}
 </style><style id="booklet-mobile-lift">
 /* Move the complete booklet and its floor shadows together, not the hero layout. */
 @media(max-width:860px){html body .hero .book.mock{top:calc(clamp(10px,1.4vw,24px) - 20px)}}
