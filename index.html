@@ -241,5 +241,8 @@ function useCPU(){if(gl){const replacement=canvas.cloneNode(false);canvas.replac
 #mincha-pop .mp-title{font-size:min(42px,13cqi)}
 #mincha-pop .mp-title>span{display:block;white-space:nowrap}
 @media(max-width:480px){#mincha-pop .mp-title{font-size:min(35px,13cqi)}}
+</style><style id="booklet-phone-lower">
+/* Nudge the full booklet and anchored shadows down on phones only. */
+@media(max-width:480px){html body .hero .book.mock{top:calc(clamp(10px,1.4vw,24px) - 8px)}}
 </style></body>
 </html>
