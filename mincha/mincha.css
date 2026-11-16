@@ -262,3 +262,6 @@ html body .mn-n.first .nx-go{background:#dff1fd;color:#021f42}
 @media (hover:hover){html body .mn-n .nx-go:hover{background:#8cbdde}html body .mn-n.first .nx-go:hover{background:#fff}}
 html body .mn-n .nx-go:focus-visible{outline:2px solid #8cbdde;outline-offset:2px}
 html body .mn-n .nx-addr .u{text-wrap:pretty}
+
+/* Shul addresses reuse the workplace address styles. */
+#panel-shul .nm .addr{direction:ltr;unicode-bidi:isolate;text-align:right;letter-spacing:normal!important;word-spacing:normal!important;white-space:normal}
