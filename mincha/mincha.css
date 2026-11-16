@@ -265,3 +265,6 @@ html body .mn-n .nx-addr .u{text-wrap:pretty}
 
 /* Shul addresses reuse the workplace address styles. */
 #panel-shul .nm .addr{direction:ltr;unicode-bidi:isolate;text-align:right;letter-spacing:normal!important;word-spacing:normal!important;white-space:normal}
+
+/* Keep English shul addresses aligned with the Hebrew name above. */
+#panel-shul .mn-n .nx-addr a{justify-content:flex-end}
