@@ -147,7 +147,8 @@ addEventListener("resize",stick);stick();
 function render(){["shul","work"].forEach(function(k){renderNext(k);renderList(k)})}
 function setTab(k,push){TAB=k;document.querySelectorAll(".mn-tab").forEach(function(b){var on=b.dataset.tab===k;b.setAttribute("aria-selected",on);b.tabIndex=on?0:-1});
  document.querySelectorAll(".mn-panel").forEach(function(p){p.hidden=p.id!=="panel-"+k});
- if(push&&history.replaceState)history.replaceState(null,"",(k==="work"?"#work":location.pathname+location.search))}
+ if(push&&history.replaceState)history.replaceState(null,"",(k==="work"?"#work":location.pathname+location.search));
+ if(push)requestAnimationFrame(function(){var bar=document.querySelector(".mn-tabbar"),panel=document.getElementById("panel-"+k),header=document.querySelector(".site-head");if(panel){var top=panel.getBoundingClientRect().top+window.scrollY-(header?header.offsetHeight:0)-(bar?bar.offsetHeight:0);window.scrollTo({top:Math.max(0,Math.round(top)),behavior:"instant"})}})}
 document.querySelectorAll(".mn-tab").forEach(function(b){b.addEventListener("click",function(){setTab(b.dataset.tab,true)})});
 document.querySelector(".mn-tabs").addEventListener("keydown",function(e){if(e.key==="ArrowLeft"||e.key==="ArrowRight"){var k=TAB==="shul"?"work":"shul";setTab(k,true);document.querySelector('.mn-tab[data-tab="'+k+'"]').focus()}});
 fetch("/mincha/mincha.json",{cache:"no-cache"}).then(function(r){return r.json()}).then(function(d){DATA=d;
