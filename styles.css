@@ -377,7 +377,6 @@ tbody th,.issue-name,.sizes strong{font-weight:600}
 .ticker-set{display:flex;align-items:center;flex-shrink:0}
 .ticker span{font-weight:800;font-size:clamp(15px,1.25vw,20px);letter-spacing:.08em;white-space:nowrap;color:var(--navy);padding:0 28px}
 .ticker i{font-style:normal;color:#021f42;font-size:.9em;animation:spinstar 6s linear infinite;display:inline-block}
-.ticker:hover .ticker-track{animation-play-state:paused}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes spinstar{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.ticker-track,.ticker i{animation:none}}
