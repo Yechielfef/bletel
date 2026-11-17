@@ -83,7 +83,8 @@ function renderClock(){var n=now(),s=Math.floor(n.mins*60+1e-6),h=Math.floor(s/3
  t.innerHTML=(h%12||12)+":"+(m<10?"0":"")+m+"<span class=\"mn-sec\">:"+(sec<10?"0":"")+sec+"</span>"+"<small>"+(h<12?"AM":"PM")+"</small>";
  var z=zmanim(n.y,n.m,n.d),g=document.getElementById("mn-gedola"),k=document.getElementById("mn-shkia");
  function hz(x){x=Math.round(x);var H=Math.floor(x/60),M=x%60;return (H%12||12)+":"+(M<10?"0":"")+M+"<small>"+(H<12?"AM":"PM")+"</small>"}
- if(g)g.innerHTML=hz(z.gedola);if(k)k.innerHTML=hz(z.shkia)}
+ // Header only: Magen Avraham, fixed 72 minutes before sunrise / after sunset.
+ if(g)g.innerHTML=hz(Math.ceil((z.sunrise-72)+(z.sunset-z.sunrise+144)*6.5/12));if(k)k.innerHTML=hz(z.shkia)}
 
 function firstOf(kind,n){ // first list day after today with minyanim
  for(var k=1;k<=7;k++){var day=addDay(n,k),dl=dayList(kind,day);if(dl.items.length)return{day:day,k:k,items:dl.items}}return null}
