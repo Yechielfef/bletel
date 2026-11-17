@@ -95,7 +95,9 @@
     },
     {
       "name": "וויזניץ צמח צדיק - כולל",
-      "time": "13:30"
+      "time": "13:30",
+      "address": "354 Van Horne, H2V 4H3",
+      "maps": "354 Van Horne, H2V 4H3, Montréal, QC, Canada"
     },
     {
       "name": "כולל עמק הלכה (עטרת פיגא)",
@@ -157,7 +159,9 @@
     },
     {
       "name": "סקווירא",
-      "time": "15:30"
+      "time": "15:30",
+      "address": "6019 Durocher, H2V 3Y7",
+      "maps": "6019 Durocher, H2V 3Y7, Montréal, QC, Canada"
     },
     {
       "name": "חרדים",
@@ -197,7 +201,9 @@
     },
     {
       "name": "סקווירא",
-      "time": "16:15"
+      "time": "16:15",
+      "address": "6019 Durocher, H2V 3Y7",
+      "maps": "6019 Durocher, H2V 3Y7, Montréal, QC, Canada"
     },
     {
       "name": "בעלזא בית יעקב - פארק",
@@ -207,7 +213,9 @@
     },
     {
       "name": "סקווירא",
-      "time": "16:40"
+      "time": "16:40",
+      "address": "6019 Durocher, H2V 3Y7",
+      "maps": "6019 Durocher, H2V 3Y7, Montréal, QC, Canada"
     },
     {
       "name": "סאטמאר - פארק",
@@ -264,7 +272,9 @@
     {
       "name": "סקווירא",
       "rel": "shkia",
-      "offset": 35
+      "offset": 35,
+      "address": "6019 Durocher, H2V 3Y7",
+      "maps": "6019 Durocher, H2V 3Y7, Montréal, QC, Canada"
     },
     {
       "name": "היכל דוד",
@@ -295,7 +305,9 @@
     {
       "name": "סקווירא",
       "rel": "shkia",
-      "offset": 50
+      "offset": 50,
+      "address": "6019 Durocher, H2V 3Y7",
+      "maps": "6019 Durocher, H2V 3Y7, Montréal, QC, Canada"
     },
     {
       "name": "סאטמאר - פארק",
@@ -552,4 +564,4 @@
       }
     ]
   }
-}
+    }
