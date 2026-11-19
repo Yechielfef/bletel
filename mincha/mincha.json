@@ -312,7 +312,14 @@
     {
       "name": "סאטמאר - פארק",
       "rel": "shkia",
-      "offset": 55,
+      "offset": 50,
+      "address": "5870 Parc, H2V 4H3",
+      "maps": "5870 Parc, H2V 4H3, Montréal, QC, Canada"
+    },
+    {
+      "name": "סאטמאר - פארק",
+      "rel": "shkia",
+      "offset": 57,
       "address": "5870 Parc, H2V 4H3",
       "maps": "5870 Parc, H2V 4H3, Montréal, QC, Canada"
     },
