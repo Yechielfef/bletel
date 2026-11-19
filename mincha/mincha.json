@@ -142,8 +142,10 @@
       "maps": "1040 Van Horne, H2V 1J5, Montréal, QC, Canada"
     },
     {
-      "name": "כולל מהר'י ט''ב - 5658 פארק",
-      "time": "15:00"
+      "name": "כולל מהר'י ט''ב",
+      "time": "15:00",
+      "address": "5658 Parc, H2V 4H1",
+      "maps": "5658 Parc, H2V 4H1, Montréal, QC, Canada"
     },
     {
       "name": "'אהל חיים' ד'סאטמאר",
