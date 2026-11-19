@@ -62,13 +62,13 @@ function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;
 function cd(diff){diff=Math.ceil(diff);if(diff<=0)return"Now";
  if(diff<60)return"in "+diff+" min";var h=Math.floor(diff/60),m=diff%60;return"in "+h+" hr"+(m?" "+m+" min":"")}
 function tagHTML(e){return e.tag?'<span class="mn-tag">'+esc(e.tag)+'</span>':""}
-function addrHTML(e){if(!e.address&&!e.maps)return"";var txt=esc(e.address||"Open in Maps");
+function addrHTML(e){if(!e.address&&!e.maps)return"";var txt=(e.address||"Open in Maps").split("|").map(esc).join("<br>");
  if(e.maps)txt='<a href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(e.maps)+'" target="_blank" rel="noopener"><svg class="pin" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span class="u">'+txt+'</span></a>';
  return'<span class="addr">'+txt+'</span>'}
 function nextAddrHTML(e){if(!e.address&&!e.maps)return"";
  var dest=(e.lat!=null&&(e.lng!=null||e.lon!=null))?e.lat+","+(e.lng!=null?e.lng:e.lon):(e.maps||e.address);
  var url="https://www.google.com/maps/dir/?api=1&destination="+encodeURIComponent(dest);
- return'<span class="addr nx-addr"><a href="'+url+'" target="_blank" rel="noopener" aria-label="Directions to '+esc(e.name)+(e.address?", "+esc(e.address):"")+'"><span class="nx-l"><svg class="pin" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span class="u">'+esc(e.address||"Open in Maps")+'</span></span></a></span>'}
+ return'<span class="addr nx-addr"><a href="'+url+'" target="_blank" rel="noopener" aria-label="Directions to '+esc(e.name)+(e.address?", "+esc(e.address):"")+'"><span class="nx-l"><svg class="pin" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span class="u">'+(e.address||"Open in Maps").split("|").map(esc).join("<br>")+'</span></span></a></span>'}
 function dirUrl(e){var dest=(e.lat!=null&&(e.lng!=null||e.lon!=null))?e.lat+","+(e.lng!=null?e.lng:e.lon):(e.maps||e.address);return"https://www.google.com/maps/dir/?api=1&destination="+encodeURIComponent(dest)}
 function dirBtnHTML(e){if(!e.address&&!e.maps)return"";return'<a class="nx-go" href="'+dirUrl(e)+'" target="_blank" rel="noopener" aria-label="Directions to '+esc(e.name)+'" title="Directions"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.71 11.29l-9-9a1 1 0 0 0-1.41 0l-9 9a1 1 0 0 0 0 1.41l9 9a1 1 0 0 0 1.41 0l9-9a1 1 0 0 0 0-1.41zM14 14.5V12h-4v3H8v-4a1 1 0 0 1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg></a>'}
 function nameHTML(x,kind,link){var e=x.e;

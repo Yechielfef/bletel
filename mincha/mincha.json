@@ -340,6 +340,12 @@
   ],
   "work": [
     {
+      "name": "Spiegel Ryan",
+      "address": "1255 Peel Street, H3B 2T9|10th floor",
+      "time": "12:35",
+      "maps": "1255 Rue Peel, Montréal, QC H3B 2T9"
+    },
+    {
       "name": "Biener's Bakery",
       "address": "2275 Rue Dandurand",
       "time": "12:40",
