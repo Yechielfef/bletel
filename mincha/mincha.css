@@ -273,8 +273,8 @@ html body .mn-n .nx-addr .u{text-wrap:pretty}
 .mn .nm .sub > span:not(.mn-tag){color:var(--navy)}
 .mn .mn-n.first .nm .sub > span:not(.mn-tag){color:var(--ice)}
 
-/*glassframes v39: popup-style glass on the three clock frames, more room in frames and list rows, addresses set below names */
-html body .mn-clock, html body .mn-zm>*{background:linear-gradient(180deg, rgba(255,255,255,.13) 0%, rgba(255,255,255,.03) 45%, rgba(255,255,255,0) 60%), linear-gradient(165deg, rgba(2,31,66,.42) 0%, rgba(2,31,66,.26) 45%, rgba(2,31,66,.36) 100%)!important;-webkit-backdrop-filter:blur(12px) saturate(140%)!important;backdrop-filter:blur(12px) saturate(140%)!important;border:1px solid rgba(255,255,255,.38)!important;box-shadow:0 30px 80px rgba(2,31,66,.5), inset 0 -1px 0 rgba(255,255,255,.06)!important}
+/*matteframes v40: matte navy finish on the three clock frames, more room in frames and list rows, addresses set below names, time divider matches location pin color */
+html body .mn-clock, html body .mn-zm>*{background:rgba(5,36,72,.5)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;border:1px solid rgba(140,189,222,.45)!important;box-shadow:none!important}
 html body .mn-clock{padding:18px 24px!important;gap:16px!important}
 html body .mn-zi{padding:13px 12px!important;gap:4px!important}
 html body .mn-time{font-size:clamp(25px,7vw,31px)!important}
@@ -283,7 +283,7 @@ html body .mn-zh{font-size:15px!important}
 html body .mn-title{font-size:clamp(28px,7.2vw,40px)!important}
 html body .mn-h h2{font-size:18px!important}
 html body .mn-r{height:auto!important;min-height:0!important;overflow:visible!important;padding:15px 18px 15px 14px!important;gap:18px!important}
-html body .mn-r .tm{border-inline-end:1px solid var(--ice);padding-inline-end:16px;font-size:17px!important}
+html body .mn-r .tm{border-inline-end:1px solid var(--sky);padding-inline-end:16px;font-size:17px!important}
 html body .mn-r .nm.he{font-size:15.5px!important}
 html body .mn-r .nm.en{font-size:14.5px!important}
 html body .nm .addr{margin-top:7px!important;-webkit-line-clamp:2}
