@@ -13,8 +13,8 @@ body{margin:0;font-family:"Ordinary","Heebo",system-ui,-apple-system,"Segoe UI",
 img{max-width:100%;height:auto;display:block}
 a{color:inherit}
 .wrap{width:min(1120px,100% - 40px);margin-inline:auto}
-.skip{position:absolute;top:0;inset-inline-start:8px;background:#fff;color:var(--navy);padding:8px 12px;z-index:10;transform:translateY(-120%)}
-.skip:focus{transform:none}
+.skip{position:absolute;top:0;inset-inline-start:8px;background:#fff;color:var(--navy);padding:8px 12px;z-index:10;clip:rect(0 0 0 0);-webkit-clip-path:inset(50%);clip-path:inset(50%)}
+.skip:focus{clip:auto;-webkit-clip-path:none;clip-path:none}
 body{overflow-x:clip}
 .en{font-family:"Ordinary",system-ui,sans-serif}
 .site-head{background:var(--navy);color:var(--sky);position:sticky;top:0;z-index:5;box-shadow:0 2px 12px rgba(0,0,0,.18)}
