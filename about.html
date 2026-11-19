@@ -38,7 +38,7 @@ else if(h.indexOf('tel:')===0)gtag('event','phone_click',{link_url:h});});</scri
 <header class="site-head">
 <div class="wrap head-row">
 <a aria-label="Bletel home" class="brand" href="index.html"><img alt="בלעטל Bletel" height="197" src="img/logo-light.svg" width="585"/></a>
-<button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" onclick="var h=this.closest('.site-head');var o=h.classList.toggle('open');this.setAttribute('aria-expanded',o)"><span></span><span></span><span></span></button>
+<button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" onclick="var h=this.closest('.site-head');var o=h.classList.toggle('open');this.setAttribute('aria-expanded',o);if(o){var b=this;var c=function(){h.classList.remove('open');b.setAttribute('aria-expanded','false');window.removeEventListener('scroll',c)};window.addEventListener('scroll',c,{passive:true})}"><span></span><span></span><span></span></button>
 <nav aria-label="Main" class="nav"><a href="index.html"><span class="en">Home</span></a><a aria-current="page" href="about.html"><span class="en">About</span></a><a href="archive.html"><span class="en">Previous Issues</span></a><a href="advertise.html"><span class="en">Advertise</span></a><a href="bulletin.html"><span class="en">Bulletin</span></a><a href="moduos.html"><span class="en">Moduos</span></a><a href="contact.html"><span class="en">Contact</span></a></nav>
 </div>
 </header>
