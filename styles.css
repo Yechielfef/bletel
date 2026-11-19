@@ -554,10 +554,10 @@ thead th{color:#fff}
 .prod-txt strong{font-size:24px;font-weight:900;line-height:1.1}
 .prod-tag{font-size:12px;letter-spacing:.06em;font-weight:700;opacity:.9}
 .prod-go{margin-top:8px;font-weight:700;font-size:14px}
-.prod-bul{background:linear-gradient(160deg,#5a5084 0%,#2d2a3b 100%)}
-.prod-bul .prod-he,.prod-bul .prod-go{color:#e0a060}
-.prod-mod{background:linear-gradient(160deg,#4a4640 0%,#2a2a2a 100%)}
-.prod-mod .prod-he,.prod-mod .prod-go{color:#d9b77e}
+.prod-bul{background:linear-gradient(160deg,#0a4a86 0%,#021f42 100%)}
+.prod-bul .prod-he,.prod-bul .prod-go{color:#8cbdde}
+.prod-mod{background:linear-gradient(160deg,#0a4a86 0%,#021f42 100%)}
+.prod-mod .prod-he,.prod-mod .prod-go{color:#8cbdde}
 .prod-feature{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:var(--r,16px);overflow:hidden;color:#fff;margin:10px 0 30px;box-shadow:0 14px 34px rgba(2,31,66,.18)}
 .prod-feature .prod-img{aspect-ratio:auto;min-height:100%}
 .prod-feature .prod-txt{padding:34px;justify-content:center;gap:10px}
@@ -705,12 +705,12 @@ thead th{color:#fff}
 
 /* deadline chip in product colors */
 .prod-bul .dl-chip,.prod-mod .dl-chip{background:rgba(255,255,255,.08) !important;border:1px solid rgba(255,255,255,.18) !important}
-.prod-bul .dl-chip::before{background:#e0a060}
-.prod-mod .dl-chip::before{background:#d9b77e}
-.prod-bul .dl-chip .dl-icw{background:#e0a060;color:#2d2a3b}
-.prod-mod .dl-chip .dl-icw{background:#d9b77e;color:#2a2a2a}
-.prod-bul .dl-chip .dl-lab{color:#e0a060 !important}
-.prod-mod .dl-chip .dl-lab{color:#d9b77e !important}
+.prod-bul .dl-chip::before{background:#8cbdde}
+.prod-mod .dl-chip::before{background:#8cbdde}
+.prod-bul .dl-chip .dl-icw{background:#8cbdde;color:#021f42}
+.prod-mod .dl-chip .dl-icw{background:#8cbdde;color:#021f42}
+.prod-bul .dl-chip .dl-lab{color:#8cbdde !important}
+.prod-mod .dl-chip .dl-lab{color:#8cbdde !important}
 .prod-bul .dl-chip strong,.prod-mod .dl-chip strong{color:#fff !important}
 
 /* square top so the color bar runs straight edge to edge */
@@ -743,10 +743,10 @@ thead th{color:#fff}
 @media (max-width:760px){.tl::before{right:auto}}
 
 /* product-colored CTA buttons */
-.prod-bul .btn-main{background:#e0a060 !important;border-color:#e0a060 !important;color:#2d2a3b !important}
-.prod-bul .btn-main:hover{background:#eab57f !important}
-.prod-mod .btn-main{background:#d9b77e !important;border-color:#d9b77e !important;color:#2a2a2a !important}
-.prod-mod .btn-main:hover{background:#e4c897 !important}
+.prod-bul .btn-main{background:#8cbdde !important;border-color:#8cbdde !important;color:#021f42 !important}
+.prod-bul .btn-main:hover{background:#a9d4fb !important}
+.prod-mod .btn-main{background:#8cbdde !important;border-color:#8cbdde !important;color:#021f42 !important}
+.prod-mod .btn-main:hover{background:#a9d4fb !important}
 
 /* timeline v2: icon badges, live pulse, moving line */
 .tl-bic{width:30px;height:30px}
@@ -763,10 +763,10 @@ thead th{color:#fff}
 @media (prefers-reduced-motion:reduce){.tl-badge,.tl::before{animation:none !important}}
 .tl-bic{width:34px;height:34px}
 
-.prod-bul .btn-light{border-color:#e0a060 !important;color:#fff !important;background:transparent !important}
-.prod-bul .btn-light:hover{background:rgba(224,160,96,.15) !important}
-.prod-mod .btn-light{border-color:#d9b77e !important;color:#fff !important;background:transparent !important}
-.prod-mod .btn-light:hover{background:rgba(217,183,126,.15) !important}
+.prod-bul .btn-light{border-color:#8cbdde !important;color:#fff !important;background:transparent !important}
+.prod-bul .btn-light:hover{background:rgba(140,189,222,.15) !important}
+.prod-mod .btn-light{border-color:#8cbdde !important;color:#fff !important;background:transparent !important}
+.prod-mod .btn-light:hover{background:rgba(140,189,222,.15) !important}
 
 /* ad sizes v2: page diagrams */
 .sizes2{list-style:none;margin:10px 0 36px;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
