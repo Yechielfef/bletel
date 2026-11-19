@@ -13,7 +13,16 @@ else if(h.indexOf('tel:')===0)gtag('event','phone_click',{link_url:h});});</scri
 <style>html,body{margin:0;height:100%;background:#021f42;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
 .bar{height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:#021f42;color:#fff;box-sizing:border-box}
 .bar img{height:30px;display:block}.bar .t{font-size:15px;opacity:.85}.bar a.home{color:#c9e6fb;text-decoration:none;font-size:14px}
-body{display:flex;flex-direction:column}.bar,.about{flex:none}iframe{display:block;width:100%;flex:1 1 auto;height:auto;min-height:0;border:0}
+body{display:flex;flex-direction:column}.bar,.about{flex:none}.stage{flex:1 1 auto;position:relative;min-height:0}
+.stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:1;background:transparent}
+.ld{position:absolute;inset:0;z-index:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#c9e6fb;text-align:center;padding:24px;box-sizing:border-box}
+.ld-logo{width:150px;max-width:50vw;display:block}
+.ld-msg{margin:20px 0 0;font-size:15px}
+.ld-dots{margin-top:14px;display:flex;gap:8px}
+.ld-dots i{width:8px;height:8px;border-radius:50%;background:#8cbdde;animation:ldp 1s infinite ease-in-out}
+.ld-dots i:nth-child(2){animation-delay:.15s}
+.ld-dots i:nth-child(3){animation-delay:.3s}
+@keyframes ldp{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:1;transform:scale(1)}}
 .bar h1.t{margin:0;font-weight:400}
 .about{margin:0;padding:12px 16px;background:#021f42;color:#c9e6fb;font-size:13px;line-height:1.5}.about a{color:#c9e6fb}
 @media(max-width:560px){.bar .t{display:none}}</style><link rel="apple-touch-icon" href="/img/apple-touch-icon-3.png?v=9">
@@ -22,6 +31,6 @@ body{display:flex;flex-direction:column}.bar,.about{flex:none}iframe{display:blo
 
 </head><body>
 <div class="bar"><a href="/" aria-label="Bletel home"><img src="/img/logo-light.svg" alt="Bletel"></a><h1 class="t">Bletel #277 · Nov 18, 2026</h1><a class="home" href="/">bletel.ca →</a></div>
-<iframe src="https://online.anyflip.com/xuwpd/wcuo/" title="Bletel #277" allowfullscreen allow="fullscreen"></iframe>
+<div class="stage"><div class="ld"><img class="ld-logo" src="/img/logo-light.svg" alt=""><p class="ld-msg">Loading Bletel&hellip;</p><div class="ld-dots" aria-hidden="true"><i></i><i></i><i></i></div></div><iframe src="https://online.anyflip.com/xuwpd/wcuo/" title="Bletel #277" allowfullscreen allow="fullscreen"></iframe></div>
 <p class="about">Bletel #277, published Nov 18, 2026. Montreal / Tosh Weekly Advertising Publication · <a href="/archive.html">All issues</a></p>
 <script>gtag('event','open_issue',{issue:'277'});</script></body></html>

@@ -15,7 +15,22 @@ function later(){var w=300-(Date.now()-t0);if(w>0)setTimeout(go,w);else go();}
 gtag('event','tracking_link',{source:'whatsapp',issue:'277',link_path:location.pathname,event_callback:later,event_timeout:1200});
 setTimeout(go,1500);})();
 </script>
-</head><body style="font-family:sans-serif;text-align:center;padding:40px 16px">
-<p><a href="https://www.bletel.ca/current/">Bletel</a></p>
-<noscript><p><a href="https://www.bletel.ca/current/">https://www.bletel.ca/current/</a></p></noscript>
+<style>
+html,body{margin:0;height:100%}
+body{display:flex;flex-direction:column;align-items:center;justify-content:center;background:#021f42;color:#c9e6fb;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;text-align:center;padding:24px;box-sizing:border-box}
+.ld-logo{width:170px;max-width:55vw;display:block}
+.ld-msg{margin:22px 0 0;font-size:16px;letter-spacing:.2px}
+.ld-dots{margin-top:16px;display:flex;gap:8px}
+.ld-dots i{width:8px;height:8px;border-radius:50%;background:#8cbdde;animation:ldp 1s infinite ease-in-out}
+.ld-dots i:nth-child(2){animation-delay:.15s}
+.ld-dots i:nth-child(3){animation-delay:.3s}
+@keyframes ldp{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:1;transform:scale(1)}}
+.ld-fb{position:fixed;left:0;right:0;bottom:14px;font-size:12px;opacity:.65}
+.ld-fb a{color:#c9e6fb}
+</style>
+</head><body>
+<img class="ld-logo" src="/img/logo-light.svg" alt="Bletel">
+<p class="ld-msg">Opening Bletel&hellip;</p>
+<div class="ld-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+<p class="ld-fb"><a href="https://www.bletel.ca/current/">Tap here if it doesn&rsquo;t open</a></p>
 </body></html>
