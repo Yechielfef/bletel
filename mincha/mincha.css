@@ -163,8 +163,7 @@
 /* ---------- laptop / desktop ---------- */
 @media (min-width:1024px){
  .mn-hero .mn-wrap{display:grid;grid-template-columns:1fr auto;align-items:end;gap:28px}
- .mn-clock{margin-top:0;flex-direction:column;align-items:flex-end;gap:2px;min-width:300px;text-align:right}
- .mn-clock .mn-place{order:-1;margin-bottom:4px}
+ .mn-clock{margin-top:0}
  .mn-grid{grid-template-columns:380px 1fr;align-items:start;gap:28px}
  .mn-next{position:sticky;top:calc(var(--stick,0px) + 96px)}
  .mn-list.cols{columns:1}
