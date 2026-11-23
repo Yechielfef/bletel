@@ -32,7 +32,7 @@ function zmanim(y,m,d){ // local Montreal minutes-of-day
  var jd=jdOf(y,m,d),base=Date.UTC(y,m-1,d);
  var r=new Date(base+riseSetUTC(true,jd,LAT,LON)*60000),s=new Date(base+riseSetUTC(false,jd,LAT,LON)*60000);
  var rl=mtl(r).mins,sl=mtl(s).mins;
- return{sunrise:rl,sunset:sl,shkia:Math.round(sl),gedola:Math.ceil(rl+(sl-rl)*6.5/12)}}
+ return{sunrise:rl,sunset:sl,shkia:Math.round(sl),gedola:Math.ceil((rl-72)+(sl-rl+144)*6.5/12)}}
 function hm(mins){mins=Math.round(mins);var h=Math.floor(mins/60),mm=mins%60;var h12=h%12||12;return h12+":"+(mm<10?"0":"")+mm}
 function parse(t){var a=String(t).split(":");return +a[0]*60+(+a[1]||0)+(+a[2]||0)/60}
 
@@ -83,8 +83,8 @@ function renderClock(){var n=now(),s=Math.floor(n.mins*60+1e-6),h=Math.floor(s/3
  t.innerHTML=(h%12||12)+":"+(m<10?"0":"")+m+"<span class=\"mn-sec\">:"+(sec<10?"0":"")+sec+"</span>"+"<small>"+(h<12?"AM":"PM")+"</small>";
  var z=zmanim(n.y,n.m,n.d),g=document.getElementById("mn-gedola"),k=document.getElementById("mn-shkia");
  function hz(x){x=Math.round(x);var H=Math.floor(x/60),M=x%60;return (H%12||12)+":"+(M<10?"0":"")+M+"<small>"+(H<12?"AM":"PM")+"</small>"}
- // Header only: Magen Avraham, fixed 72 minutes before sunrise / after sunset.
- if(g)g.innerHTML=hz(Math.ceil((z.sunrise-72)+(z.sunset-z.sunrise+144)*6.5/12));if(k)k.innerHTML=hz(z.shkia)}
+ // Mincha Gedola: Magen Avraham, fixed 72 minutes before sunrise / after sunset.
+ if(g)g.innerHTML=hz(z.gedola);if(k)k.innerHTML=hz(z.shkia)}
 
 function firstOf(kind,n){ // first list day after today with minyanim
  for(var k=1;k<=7;k++){var day=addDay(n,k),dl=dayList(kind,day);if(dl.items.length)return{day:day,k:k,items:dl.items}}return null}
