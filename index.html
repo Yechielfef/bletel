@@ -64,7 +64,7 @@ else if(h.indexOf('tel:')===0)gtag('event','phone_click',{link_url:h});});</scri
 <meta content="Be Seen Where the Community Looks. The leading Jewish advertising publication in Montreal and Tosh, delivered to 3,000+ homes every week and available at newsstands." name="description"/>
 <meta content="Bletel | Montreal / Tosh Weekly Advertising Publication" property="og:title"/>
 <meta content="Be Seen Where the Community Looks. The leading Jewish advertising publication in Montreal and Tosh, delivered to 3,000+ homes every week and available at newsstands." property="og:description"/>
-<meta content="https://www.bletel.ca/img/covers/wcuo.jpg?v=2" property="og:image"/>
+<meta content="https://www.bletel.ca/img/covers/cocx.jpg?v=2" property="og:image"/>
 <meta content="#021f42" name="theme-color"/>
 <link href="/img/bll.svg?v=13" rel="icon" type="image/svg+xml"/><link href="/img/fav-s32.png?v=13" rel="icon" sizes="32x32" type="image/png"/><link href="/img/fav-s16.png?v=13" rel="icon" sizes="16x16" type="image/png"/><link href="/img/fav-s48.png?v=13" rel="icon" sizes="48x48" type="image/png"/><link href="/favicon.ico?v=13" rel="icon" sizes="any"/>
 
@@ -134,7 +134,9 @@ html body .hero .bet-field .bet3d.b1{margin-left:clamp(12px,1.6vw,24px);margin-r
 <section class="recent">
 <div class="wrap">
 <div class="sec-head"><h2><span class="en" dir="ltr">Previous Issues</span></h2><a class="more" dir="ltr" href="archive.html">View All Issues →</a></div>
-<ul class="issues"><li><a class="issue" href="/issue/277/" rel="noopener" target="_blank">
+<ul class="issues"><li><a class="issue" href="/issue/278/" rel="noopener" target="_blank">
+<img alt="Bletel #278 – Jewish Hasidic Yiddish weekly, Montreal &amp; Tosh" height="480" loading="lazy" src="img/covers/cocx.jpg?v=2" width="311"/>
+<span class="issue-name">#278</span><span class="issue-date" dir="ltr">Nov 25, 2026</span></a></li><li><a class="issue" href="/issue/277/" rel="noopener" target="_blank">
 <img alt="Bletel #277 – Jewish Hasidic Yiddish weekly, Montreal &amp; Tosh" height="480" loading="lazy" src="img/covers/wcuo.jpg?v=2" width="311"/>
 <span class="issue-name">#277</span><span class="issue-date" dir="ltr">Nov 18, 2026</span></a></li><li><a class="issue" href="/issue/276/" rel="noopener" target="_blank">
 <img alt="Bletel #276 – Jewish Hasidic Yiddish weekly, Montreal &amp; Tosh" height="480" loading="lazy" src="img/covers/hllx.jpg?v=2" width="311"/>
@@ -144,9 +146,7 @@ html body .hero .bet-field .bet3d.b1{margin-left:clamp(12px,1.6vw,24px);margin-r
 <img alt="Bletel #274 – Jewish Hasidic Yiddish weekly, Montreal &amp; Tosh" height="480" loading="lazy" src="img/covers/ucyo.jpg?v=2" width="311"/>
 <span class="issue-name">#274</span><span class="issue-date" dir="ltr">Oct 28, 2026</span></a></li><li><a class="issue" href="/issue/273/" rel="noopener" target="_blank">
 <img alt="Bletel #273 – Jewish Hasidic Yiddish weekly, Montreal &amp; Tosh" height="480" loading="lazy" src="img/covers/ysjl.jpg?v=2" width="311"/>
-<span class="issue-name">#273</span><span class="issue-date" dir="ltr">Oct 21, 2026</span></a></li><li><a class="issue" href="/issue/272/" rel="noopener" target="_blank">
-<img alt="Bletel #272 – Jewish Hasidic Yiddish weekly, Montreal &amp; Tosh" height="480" loading="lazy" src="img/covers/jixh.jpg?v=2" width="311"/>
-<span class="issue-name">#272</span><span class="issue-date" dir="ltr">Oct 14, 2026</span></a></li></ul>
+<span class="issue-name">#273</span><span class="issue-date" dir="ltr">Oct 21, 2026</span></a></li></ul>
 </div>
 </section>
 <section class="pubs">
@@ -300,7 +300,7 @@ for(let j=0;j<NY;j++){let v=j/NY,V=(j+1)/NY;for(let u of [0,1]){let n=norm(cross
 if(gl){const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(data),gl.STATIC_DRAW);let stride=10*4;for(let [name,num,offset] of [['aPos',4,0],['aUV',2,4],['aNormal',3,6],['aKind',1,9]]){let loc=gl.getAttribLocation(prog,name);gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,num,gl.FLOAT,false,stride,offset*4);}
 tex=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,tex);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
 }
-let image=new Image();image.onload=()=>{try{if(gl){gl.bindTexture(gl.TEXTURE_2D,tex);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);}render();}catch(e){useCPU();}window.bookletMeshReady=true;};image.src='img/current-cover.jpg?v=277';
+let image=new Image();image.onload=()=>{try{if(gl){gl.bindTexture(gl.TEXTURE_2D,tex);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);}render();}catch(e){useCPU();}window.bookletMeshReady=true;};image.src='img/current-cover.jpg?v=278';
 function renderRatio(){const zoom=window.visualViewport?window.visualViewport.scale:1,base=Math.max(1,devicePixelRatio||1)*Math.max(2,zoom*1.35),w=canvas.clientWidth,h=canvas.clientHeight;return Math.min(base,4096/w,4096/h,Math.sqrt(8000000/(w*h)));}
 function render(){if(!gl){renderCPU();return;}window.bookletRenderMode='webgl';let ratio=renderRatio(),w=Math.max(1,Math.round(canvas.clientWidth*ratio)),h=Math.max(1,Math.round(canvas.clientHeight*ratio));canvas.width=w;canvas.height=h;gl.viewport(0,0,w,h);gl.uniform1f(gl.getUniformLocation(prog,"sampleScale"),Math.max(1,ratio/(devicePixelRatio||1)));gl.enable(gl.DEPTH_TEST);gl.depthFunc(gl.LEQUAL);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);gl.drawArrays(gl.TRIANGLES,0,data.length/10);window.bookletRenderSize={w,h,ratio,zoom:window.visualViewport?visualViewport.scale:1};}
 let zoomFrame,lastZoomKey='';function zoomRender(){cancelAnimationFrame(zoomFrame);zoomFrame=requestAnimationFrame(()=>{const key=[canvas.clientWidth,canvas.clientHeight,window.visualViewport?visualViewport.scale:1,devicePixelRatio].join(':');if(key!==lastZoomKey&&image.complete&&image.naturalWidth){lastZoomKey=key;render();}});}if(window.visualViewport)visualViewport.addEventListener('resize',zoomRender);window.addEventListener('pageshow',zoomRender);
